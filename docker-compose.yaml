@@ -1,5 +1,4 @@
 version: '2.4'
-
 services:
   jenkins:
     build: ./jenkins_controller
@@ -7,6 +6,8 @@ services:
     ports:
       - 8880:8080
       - 50000:50000
+    volumes:
+      - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
     restart: always
       
   SonarQube:
