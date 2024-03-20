@@ -1,0 +1,3 @@
+deployment_path: "~/Infrastructure"
+git_repository: "https://github.com/marqsek/Infrastructure"
+git_branch: "master"
